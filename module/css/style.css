@@ -184,7 +184,7 @@ a:hover{
 .about .contact  li{
 	padding-left: 40px;
 	line-height: 32px;
-	background: url(../images/contact-icon.png) 0 0 no-repeat;
+	background: url(../img/contact-icon.png) 0 0 no-repeat;
 }
 .contact li.l1{
 	background-position: 0 3px;
