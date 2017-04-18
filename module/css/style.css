@@ -36,6 +36,9 @@ a:hover{
 	width: 1200px;
 	margin: auto;
 }
+.header .content .logo{
+	width: 393px
+}
 .header{
 	width: 100%;
 	height: 80px;
@@ -104,6 +107,9 @@ a:hover{
 	top:0;
 	left: 0;
 	text-align: center;
+}
+.banner ul li.active{
+	opacity: 1;
 }
 .banner ol{
 	position: absolute;
