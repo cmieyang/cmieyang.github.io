@@ -2,9 +2,144 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>welcome</title>
+	<title>深圳市馨源生物科技有限公司-官方网站</title>
+	<link rel="stylesheet" href="module/css/style.css">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+ 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+ 	<meta name="Keywords" content="深圳市馨源生物科技有限公司-官方网站-精油">
+	<meta name="description" content="展示深圳市馨源生物科技有限公司详细信息，以及详细产品" />
 </head>
 <body>
-	cao-mian-yangf
+	<div class="header">
+		<div class="content ov">
+			<div class="fl ov">
+				<img src="module/img/logmin.png" alt="深圳市馨源生物科技logo" class="fl">
+				<div class="fl">
+					<h3>深圳市馨源生物科技有限公司</h3>
+				</div>
+			</div>
+			<div class="fl">
+				<ul class="nav">
+					<li><a href="product.html">产品</a></li>
+					<li><a href="#">首页</a></li>
+				</ul>
+			</div>
+			<div class="fr">
+
+			</div>
+		</div>
+	</div>
+	<div class="banner section">
+		<div>
+			<ul>
+				<li class="active"><img src="module/img/4.jpg" alt="馨源生物-精油"></li>
+				<li><img src="module/img/2.jpg" alt="馨源生物-精油"></li>
+				<li><img src="module/img/3.jpg" alt="馨源生物-精油"></li>
+			</ul>
+		</div>
+		<ol>
+			<li  class="active"></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	
+	<div class="three section">
+		<div class="content">
+			<div class="pro-top">
+				<h3>主推产品</h3>
+			</div>
+			<div class="pro-img">
+				<ul>
+					<li><img src="module/img/pro1.jpg" alt="永盛佳G15"></li>
+					<li><img src="module/img/pro2.jpg" alt="永盛佳M2S"></li>
+					<li class="end"><img src="module/img/pro3.jpg" alt="永盛佳sx101"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="about section ov">
+		<div class="content ov">
+			<div class="fl about-con">
+				<h4 class="title">关于馨源生物科技</h4>
+				<h5 class="title">about our company</h5>				
+				<p>　　2015年，设立深圳市馨源生物科技有限公司为永亨香料的子公司，是一家销售天然香料，合成香料，日用品和化妆品等综合性贸易公司。设立采购、品控、销售团队，凭着二十多年的香精香料行业经验，在原料产区派专业人员设立了天然香料的采购点，建立了完善的采销网络体系，并和多家国际先进的香精香料公司合作，为客户提供最适合的香料为企业打开香料市场。<br>
+　　罗定市永亨香料有限公司的前身是罗定市永恒香料油厂，是一家拥有香料行业20余年丰富经验的企业，专业从事八角茴香油和桂油的研发、生产和销售的企业。<br>
+　　罗定市永亨香料有限公司位于广东省罗定市，地理位置得天独厚，毗邻广西，依靠独特的地理环境和丰富的原料产区优势，严格按照国家相关标准大量生产八角茴香油和肉桂油，公司的主营产品：肉桂油、八角茴香油、茴脑、丁香油、丁香罗勒油、香茅油等，其产品全部用气相色谱仪及化学分析法检验，提供安全优质产品，并与知名品牌企业、国企、上市公司等保持业务往来。<br>
+　　公司定期拜访香料种植农户，了解和收集香料植物的收割情况，加强合作，确保产品供应稳定和符合公司的产品标准。<br>
+
+</p>
+			</div>
+			<div class="fr contact">
+				<div>
+					<h4 class="title">联系方式</h4>
+					<h5 class="title">please contact with us</h5>
+					<div class="tail">
+						<ul>
+							<li class="l1">电　　话：+86 0755-29357631</li>
+							<li class="l2">邮　　件：web@sz-simple.cn</li>
+							<li class="l3">传　　真：+86 0755-22633107</li>
+							<li class="l4">邮　　编：518107</li>
+							<li class="l5">地　　址：广东省深圳市龙华新区新区大道金域华府C单元2004</li>
+
+						</ul>
+					</div>
+				</div>
+				<div>
+					<h4 class="title">服务宗旨</h4>
+					<h5 class="title">Service tenet</h5>
+					<div class="tail">
+						<ul>
+						　　<li>从农户/工厂到客户，以优质稳定的产品质量，创新的服务，实惠的价格，为客户提供优质的产品。</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 	<div class="map section">
+	<div class="content" id="allmap"></div>
+</div> -->
+	<div class="footer"></div>
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		function runBanner(){
+			var $point  = $(".banner ol li");
+			var $images = $(".banner ul li");
+			var len     = $images.length;
+			var isAuto  = true;
+			var ind     = 0;
+			setTimeout(function(){
+				var returnFn = arguments.callee;
+				if(isAuto) {
+					ind++;
+					if(ind == len ) ind = 0;
+					run(ind);
+				}
+				setTimeout(returnFn,2000)
+			},1000);
+
+			$point.on("click",function(){
+				isAuto = false;
+				ind = $(this).index();
+				run(ind);
+				setTimeout(function(){
+					isAuto = true;
+				},5000)
+			});
+
+			function run(ind){
+				$point.removeClass("active")
+				$point.eq(ind).addClass("active");
+
+				$images.fadeOut(400)
+				$images.eq(ind).fadeIn(400);
+
+			}
+		}
+		window.onload=function(){
+			runBanner();
+		}
+	</script>
 </body>
 </html>
